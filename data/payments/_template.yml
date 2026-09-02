@@ -1,0 +1,18 @@
+# Copy to data/payments/<iso>.yml (ISO 3166-1 alpha-2, lowercase). Validated by `npm run lint:data`.
+country: XX                 # ISO alpha-2
+country_name: Country Name
+currency: XOF
+dominant_rails:             # what people actually use, most-used first
+  - MTN Mobile Money
+  - card
+providers:
+  - name: Provider Name
+    url: https://provider.example
+    methods: [mobile_money, card, bank_transfer]
+    fees_indicative: "~2-3% by channel"
+    recurring: true          # supports subscriptions?
+    payout_currency: XOF
+    docs: https://provider.example/docs
+    notes: "anything a founder should know"
+    source: https://where-you-verified-this.example
+    last_checked: "2026-09"

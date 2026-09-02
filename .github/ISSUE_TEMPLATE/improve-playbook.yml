@@ -1,0 +1,16 @@
+name: "📖 Improve a playbook / guide"
+description: Suggest a fix, a missing step, or a better template for a playbook.
+title: "Playbook <n>: <what to improve>"
+labels: ["playbook"]
+body:
+  - type: input
+    id: file
+    attributes: { label: Which file, placeholder: "03-playbooks/02-build-mvp-7-days.md" }
+    validations: { required: true }
+  - type: textarea
+    id: change
+    attributes: { label: What should change and why }
+    validations: { required: true }
+  - type: textarea
+    id: evidence
+    attributes: { label: "Evidence / experience (you ran it, a source, a result)" }

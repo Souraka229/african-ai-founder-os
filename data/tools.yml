@@ -1,0 +1,73 @@
+# Vetted tools. Validated by `npm run lint:data`. Keep it lean — this feeds future tooling.
+tools:
+  - name: Claude Code
+    category: ai
+    tier: top
+    url: https://claude.com/claude-code
+    pricing: "$20/mo (Pro) then usage"
+    note: "Terminal coding agent; builds whole MVPs. Core of this repo."
+    source: https://claude.com/claude-code
+    last_checked: "2026-09"
+
+  - name: Cursor
+    category: ai
+    tier: top
+    url: https://cursor.com
+    pricing: "$20/mo"
+    note: "AI IDE, multi-file editing."
+    source: https://cursor.com
+    last_checked: "2026-09"
+
+  - name: Supabase
+    category: devops
+    tier: top
+    url: https://supabase.com
+    pricing: "free -> $25/mo"
+    note: "Postgres + auth + storage + edge functions. Default backend."
+    source: https://supabase.com/pricing
+    last_checked: "2026-09"
+
+  - name: rk-kit (create-rk-kit)
+    category: boilerplate
+    tier: solid
+    url: https://www.npmjs.com/package/create-rk-kit
+    pricing: "free / open source"
+    note: "TanStack Start + Better Auth + PostgreSQL RLS multi-tenant + Sentry/PostHog + Docker/Redis. Built in Benin by Regis KIKI."
+    source: "LinkedIn post by Regis KIKI (lnkd.in/enaBEJS2)"
+    last_checked: "2026-09"
+
+  - name: RodiumAI
+    category: ai
+    tier: solid
+    url: https://rodiumai.io
+    pricing: "pay-as-you-go, local payment methods, small top-ups"
+    note: "Aggregates multiple AI models behind one API; top up with local payment methods in small amounts. Built for African devs (Benin). Solves the OpenAI/Anthropic credit-access wall."
+    source: "LinkedIn post referencing rodiumai.io"
+    last_checked: "2026-09"
+
+  - name: Coolify
+    category: devops
+    tier: solid
+    url: https://coolify.io
+    pricing: "self-hosted; VPS cost only (~$5-10/mo Hetzner)"
+    note: "Open-source self-hosted PaaS, 44k+ stars, 280+ one-click services."
+    source: https://pandastack.io/blog/best-coolify-alternatives-2026
+    last_checked: "2026-09"
+
+  - name: PostHog
+    category: analytics
+    tier: top
+    url: https://posthog.com
+    pricing: "free < 1M events/mo"
+    note: "Product analytics + replay + flags + A/B + surveys. Self-host option."
+    source: https://posthog.com/pricing
+    last_checked: "2026-09"
+
+  - name: OpenRouter
+    category: ai
+    tier: solid
+    url: https://openrouter.ai
+    pricing: "usage"
+    note: "One API key routes to most LLMs; pay-as-you-go."
+    source: https://openrouter.ai
+    last_checked: "2026-09"

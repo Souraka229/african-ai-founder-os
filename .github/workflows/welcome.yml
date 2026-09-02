@@ -1,0 +1,28 @@
+name: Welcome
+
+on:
+  issues:
+    types: [opened]
+  pull_request_target:
+    types: [opened]
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: >
+            Thanks for opening your first issue 🙏 A maintainer replies within 24h.
+            If it's an Africa-layer entry, adding a dated source now speeds up the merge.
+            Come say hi in the community chat (link in the README).
+          pr-message: >
+            Thanks for your first PR 🎉 First review lands within 24h.
+            Checklist: every new fact has a `source:` URL and a `last_checked: YYYY-MM`,
+            and `npm run lint:data` passes if you touched `data/`.
+            Once merged, the All-Contributors bot adds you to the README.

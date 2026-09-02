@@ -1,0 +1,41 @@
+name: Metrics snapshot
+
+# GitHub only keeps 14 days of traffic data. This appends a weekly row to
+# 07-metrics/history.csv so the growth curve is never lost.
+
+on:
+  schedule:
+    - cron: "0 7 * * 1"   # Monday 07:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Collect and append metrics
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -e
+          date=$(date -u +%Y-%m-%d)
+          stars=$(gh api "repos/$REPO" --jq '.stargazers_count')
+          forks=$(gh api "repos/$REPO" --jq '.forks_count')
+          views=$(gh api "repos/$REPO/traffic/views" --jq '.count' 2>/dev/null || echo 0)
+          uniques=$(gh api "repos/$REPO/traffic/views" --jq '.uniques' 2>/dev/null || echo 0)
+          clones=$(gh api "repos/$REPO/traffic/clones" --jq '.count' 2>/dev/null || echo 0)
+          contributors=$(gh api "repos/$REPO/contributors?per_page=100" --jq 'length')
+          file=07-metrics/history.csv
+          [ -f "$file" ] || echo "date,stars,forks,views_14d,uniques_14d,clones_14d,contributors" > "$file"
+          echo "$date,$stars,$forks,$views,$uniques,$clones,$contributors" >> "$file"
+      - name: Commit
+        run: |
+          git config user.name "metrics-bot"
+          git config user.email "actions@github.com"
+          git add 07-metrics/history.csv
+          git diff --staged --quiet || git commit -m "chore(metrics): weekly snapshot"
+          git push

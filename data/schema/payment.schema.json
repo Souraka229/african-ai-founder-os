@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Country payments file",
+  "type": "object",
+  "required": ["country", "country_name", "currency", "dominant_rails", "providers"],
+  "additionalProperties": false,
+  "properties": {
+    "country": { "type": "string", "pattern": "^[a-z]{2}$" },
+    "country_name": { "type": "string", "minLength": 2 },
+    "currency": { "type": "string", "pattern": "^[A-Z]{3}$" },
+    "dominant_rails": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "providers": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name", "url", "methods", "fees_indicative", "recurring", "payout_currency", "source", "last_checked"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "methods": {
+            "type": "array",
+            "items": { "enum": ["card", "mobile_money", "bank_transfer", "ussd", "apple_pay", "google_pay", "crypto"] },
+            "minItems": 1
+          },
+          "fees_indicative": { "type": "string" },
+          "recurring": { "type": "boolean" },
+          "payout_currency": { "type": "string", "pattern": "^[A-Z]{3}$" },
+          "docs": { "type": "string", "format": "uri" },
+          "notes": { "type": "string" },
+          "source": { "type": "string", "format": "uri" },
+          "last_checked": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}$" }
+        }
+      }
+    }
+  }
+}

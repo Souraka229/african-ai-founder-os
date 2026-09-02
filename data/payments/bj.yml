@@ -1,0 +1,49 @@
+country: bj
+country_name: Benin
+currency: XOF
+dominant_rails:
+  - MTN Mobile Money
+  - Moov Money
+  - Celtiis Cash
+  - card
+providers:
+  - name: KkiaPay
+    url: https://kkiapay.me
+    methods: [mobile_money, card]
+    fees_indicative: "~1.5-2.5%"
+    recurring: true
+    payout_currency: XOF
+    docs: https://docs.kkiapay.me
+    notes: "Benin-native DX, quick integration; MTN/Moov Money + cards."
+    source: https://kkiapay.me
+    last_checked: "2026-09"
+  - name: FedaPay
+    url: https://fedapay.com
+    methods: [mobile_money, card, bank_transfer]
+    fees_indicative: "~1.5-3%"
+    recurring: true
+    payout_currency: XOF
+    docs: https://docs.fedapay.com
+    notes: "Benin-based; MTN/Moov Money, cards, transfers."
+    source: https://fedapay.com
+    last_checked: "2026-09"
+  - name: CinetPay
+    url: https://cinetpay.com
+    methods: [mobile_money, card]
+    fees_indicative: "~2-5% by channel/country"
+    recurring: true
+    payout_currency: XOF
+    docs: https://docs.cinetpay.com
+    notes: "Broad Francophone coverage, 64+ payment methods."
+    source: https://cinetpay.com
+    last_checked: "2026-09"
+  - name: PayDunya
+    url: https://paydunya.com
+    methods: [mobile_money, card]
+    fees_indicative: "~2-3.5%"
+    recurring: true
+    payout_currency: XOF
+    docs: https://developers.paydunya.com
+    notes: "WAEMU mobile money + Wave + cards."
+    source: https://paydunya.com
+    last_checked: "2026-09"

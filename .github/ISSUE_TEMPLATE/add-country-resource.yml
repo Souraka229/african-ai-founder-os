@@ -1,0 +1,39 @@
+name: "🌍 Add country resource (payments / grant / accelerator / regulation)"
+description: Propose a new entry for the Africa layer.
+title: "[<ISO>] Add <resource type>: <name>"
+labels: ["africa", "good first issue"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Resource type
+      options: [Payment provider, Grant, Accelerator / incubator, Regulation note, Community, Event]
+    validations: { required: true }
+  - type: input
+    id: country
+    attributes: { label: Country (ISO 3166-1 alpha-2, or "pan-Africa)", placeholder: "bj" }
+    validations: { required: true }
+  - type: input
+    id: name
+    attributes: { label: Name }
+    validations: { required: true }
+  - type: input
+    id: url
+    attributes: { label: Official URL }
+    validations: { required: true }
+  - type: textarea
+    id: details
+    attributes:
+      label: Key details
+      description: "Payments: methods, indicative fees, recurring y/n, payout currency. Grant: amount, equity %, deadline/window, eligibility."
+    validations: { required: true }
+  - type: input
+    id: source
+    attributes: { label: "Dated source (URL you verified this from)" }
+    validations: { required: true }
+  - type: checkboxes
+    id: confirm
+    attributes:
+      options:
+        - { label: "I verified this in the last 30 days", required: true }
+        - { label: "No affiliate links / trackers", required: true }

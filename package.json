@@ -1,0 +1,15 @@
+{
+  "name": "african-ai-founder-os",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The open-source operating system for African founders who ship with AI — from idea to $10k MRR.",
+  "license": "MIT",
+  "scripts": {
+    "lint:data": "node scripts/validate-data.mjs"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "yaml": "^2.5.0"
+  }
+}

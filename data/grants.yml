@@ -1,0 +1,75 @@
+# Non-dilutive & accelerator funding. Validated by `npm run lint:data`.
+# Add an entry, reflect it in 05-africa/grants-by-country.md, keep a dated source.
+
+grants:
+  - name: Tony Elumelu Foundation Entrepreneurship Programme
+    scope: pan-africa
+    amount: "USD 5,000 seed + training + mentoring"
+    equity: "0%"
+    window: "~1 Jan - 1 Mar annually"
+    eligibility: "All 54 African countries, all sectors, early-stage"
+    url: https://www.tonyelumelufoundation.org
+    source: https://www.tonyelumelufoundation.org/press-releases/apply-tef-entrepreneurship-programme-2026
+    last_checked: "2026-09"
+
+  - name: Google for Startups Black Founders Fund Africa
+    scope: pan-africa
+    amount: "Equity-free cash + Google Cloud credits + mentoring (~USD 3M fund / ~50 startups)"
+    equity: "0%"
+    window: "Annual (via CcHUB)"
+    eligibility: "Tech, Black-led, with traction"
+    url: https://startup.google.com/programs/black-founders-fund/africa/
+    source: https://cchub.africa/google-for-startups-black-founders-fund-africa-apply-now/
+    last_checked: "2026-09"
+
+  - name: Africa's Business Heroes (Jack Ma Foundation)
+    scope: pan-africa
+    amount: "Prize pool USD 1.5M (up to USD 300k top prizes)"
+    equity: "0%"
+    window: "Applications ~Mar-May"
+    eligibility: "54 countries, impact + business"
+    url: https://africabusinessheroes.org
+    source: https://africabusinessheroes.org
+    last_checked: "2026-09"
+
+  - name: MEST Africa AI Startup Program
+    scope: pan-africa
+    amount: "7-month training + 4-month incubation + shot at pre-seed"
+    equity: "Conditional investment"
+    window: "Annual"
+    eligibility: "Software / AI founders"
+    url: https://meltwater.org
+    source: https://cofoundally.com/startup-funding/five-african-startup-funding-programs-still-open-in-august-2026/
+    last_checked: "2026-09"
+
+  - name: Google for Startups Accelerator Africa
+    scope: pan-africa
+    amount: "Equity-free; credits, mentoring, 10 weeks"
+    equity: "0%"
+    window: "Cohort ~Apr-Jun"
+    eligibility: "Growth-stage, revenue-generating tech startups"
+    url: https://startup.google.com/programs/accelerator/africa/
+    source: https://startup.google.com/programs/accelerator/africa/
+    last_checked: "2026-09"
+
+  - name: Sèmè City (Benin)
+    scope: country
+    country: bj
+    amount: "Grants / incubation / workspace (varies by call)"
+    equity: "0% (grant)"
+    window: "Rolling calls for projects"
+    eligibility: "Benin-based founders"
+    url: https://semecity.bj
+    source: https://semecity.bj
+    last_checked: "2026-09"
+
+  - name: Orange Corners
+    scope: multi-country
+    country: "sn, ci, cm, ng, gh, et, rw"
+    amount: "Grant (varies) + 6-month incubation + workspace"
+    equity: "0% (grant)"
+    window: "Per country cohort"
+    eligibility: "Early-stage"
+    url: https://orangecorners.com
+    source: https://orangecorners.com
+    last_checked: "2026-09"

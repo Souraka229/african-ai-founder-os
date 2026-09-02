@@ -1,0 +1,48 @@
+country: ng
+country_name: Nigeria
+currency: NGN
+dominant_rails:
+  - bank transfer
+  - card
+  - OPay / PalmPay / Moniepoint wallets
+providers:
+  - name: Paystack
+    url: https://paystack.com
+    methods: [card, bank_transfer, ussd, mobile_money, apple_pay, google_pay]
+    fees_indicative: "~1.5% + NGN100 local (capped); ~3.9% intl"
+    recurring: true
+    payout_currency: NGN
+    docs: https://paystack.com/docs
+    notes: "Stripe-owned; best-in-class DX and recurring."
+    source: https://paystack.com/pricing
+    last_checked: "2026-09"
+  - name: Flutterwave
+    url: https://flutterwave.com
+    methods: [card, bank_transfer, ussd, mobile_money]
+    fees_indicative: "~1.4% local / ~3.8% intl"
+    recurring: true
+    payout_currency: NGN
+    docs: https://developer.flutterwave.com
+    notes: "Pan-African reach if you expand beyond NG."
+    source: https://flutterwave.com/ng/pricing
+    last_checked: "2026-09"
+  - name: Monnify (Moniepoint)
+    url: https://monnify.com
+    methods: [bank_transfer, card, ussd]
+    fees_indicative: "~1% capped"
+    recurring: true
+    payout_currency: NGN
+    docs: https://developers.monnify.com
+    notes: "Dedicated virtual accounts; strong for transfer-first flows."
+    source: https://monnify.com
+    last_checked: "2026-09"
+  - name: Korapay
+    url: https://korahq.com
+    methods: [card, bank_transfer, mobile_money]
+    fees_indicative: "negotiated"
+    recurring: true
+    payout_currency: NGN
+    docs: https://docs.korahq.com
+    notes: "Good for payouts/disbursements too."
+    source: https://korahq.com
+    last_checked: "2026-09"

@@ -1,0 +1,16 @@
+name: "⚠️ Report outdated / broken info"
+description: A dead link, a changed amount, a closed program, a wrong fee.
+title: "Outdated: <where>"
+labels: ["outdated", "good first issue"]
+body:
+  - type: input
+    id: location
+    attributes: { label: File + line / section }
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes: { label: What is wrong now }
+    validations: { required: true }
+  - type: input
+    id: correct
+    attributes: { label: "Correct value / new link (with a dated source if you have it)" }

@@ -1,0 +1,48 @@
+country: ke
+country_name: Kenya
+currency: KES
+dominant_rails:
+  - M-Pesa
+  - card
+  - Airtel Money
+providers:
+  - name: Safaricom Daraja (M-Pesa API)
+    url: https://developer.safaricom.co.ke
+    methods: [mobile_money]
+    fees_indicative: "~0-1.5% depending on tariff band"
+    recurring: false
+    payout_currency: KES
+    docs: https://developer.safaricom.co.ke/APIs
+    notes: "STK Push (C2B), B2C, B2B. Direct = lowest fees, more integration work."
+    source: https://developer.safaricom.co.ke
+    last_checked: "2026-09"
+  - name: Flutterwave
+    url: https://flutterwave.com
+    methods: [card, mobile_money, bank_transfer]
+    fees_indicative: "~3.4% (varies)"
+    recurring: true
+    payout_currency: KES
+    docs: https://developer.flutterwave.com
+    notes: "Wraps M-Pesa + cards + Airtel with recurring support."
+    source: https://flutterwave.com/ke/pricing
+    last_checked: "2026-09"
+  - name: Paystack
+    url: https://paystack.com
+    methods: [card, mobile_money, bank_transfer]
+    fees_indicative: "~2.9% local"
+    recurring: true
+    payout_currency: KES
+    docs: https://paystack.com/docs
+    notes: "M-Pesa + cards; clean recurring."
+    source: https://paystack.com/ke
+    last_checked: "2026-09"
+  - name: IntaSend
+    url: https://intasend.com
+    methods: [mobile_money, card, bank_transfer]
+    fees_indicative: "~3.5% card / lower M-Pesa"
+    recurring: true
+    payout_currency: KES
+    docs: https://developers.intasend.com
+    notes: "KE-first, good M-Pesa payouts."
+    source: https://intasend.com
+    last_checked: "2026-09"

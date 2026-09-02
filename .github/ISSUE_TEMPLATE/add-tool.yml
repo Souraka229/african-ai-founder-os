@@ -1,0 +1,28 @@
+name: "🛠️ Add / update a tool"
+description: Suggest a tool for the stack (AI, boilerplate, analytics, deploy, GTM, comms).
+title: "Add tool: <name>"
+labels: ["tools", "good first issue"]
+body:
+  - type: input
+    id: name
+    attributes: { label: Tool name }
+    validations: { required: true }
+  - type: input
+    id: url
+    attributes: { label: URL }
+    validations: { required: true }
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options: [AI tool, SaaS boilerplate, Payments (Africa), Cloud credits, Analytics, DevOps / deploy, GTM / sales, WhatsApp / comms, Other]
+    validations: { required: true }
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it belongs here (1-3 lines)
+      description: What pain it solves, pricing order of magnitude, and any Africa-specific relevance (local payments, offline, FR/AR UI, data residency).
+    validations: { required: true }
+  - type: input
+    id: tier
+    attributes: { label: "Proposed tier (top / solid / emerging)" }

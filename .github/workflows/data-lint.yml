@@ -1,0 +1,17 @@
+name: Data lint
+
+on:
+  pull_request:
+    paths: ["data/**"]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - run: npm ci || npm install
+      - name: Validate YAML against JSON Schema
+        run: npm run lint:data
