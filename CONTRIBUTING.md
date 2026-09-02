@@ -61,4 +61,5 @@ be useful, and **zero tolerance for spam, scams, or unsolicited "investor" / cry
 
 ## Questions
 
-Open a [Discussion](https://github.com/OWNER/african-ai-founder-os/discussions) or ask in the community chat.
+Open a [Discussion](https://github.com/Souraka229/african-ai-founder-os/discussions) or ask in the community chat.
+

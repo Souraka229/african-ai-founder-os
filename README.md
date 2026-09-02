@@ -19,10 +19,10 @@
 </p>
 
 <p align="center">
-  <img alt="Stars" src="https://img.shields.io/github/stars/OWNER/african-ai-founder-os?style=flat">
-  <img alt="Forks" src="https://img.shields.io/github/forks/OWNER/african-ai-founder-os?style=flat">
-  <img alt="Contributors" src="https://img.shields.io/github/contributors/OWNER/african-ai-founder-os">
-  <img alt="Last commit" src="https://img.shields.io/github/last-commit/OWNER/african-ai-founder-os">
+  <img alt="Stars" src="https://img.shields.io/github/stars/Souraka229/african-ai-founder-os?style=flat">
+  <img alt="Forks" src="https://img.shields.io/github/forks/Souraka229/african-ai-founder-os?style=flat">
+  <img alt="Contributors" src="https://img.shields.io/github/contributors/Souraka229/african-ai-founder-os">
+  <img alt="Last commit" src="https://img.shields.io/github/last-commit/Souraka229/african-ai-founder-os">
   <img alt="Code: MIT" src="https://img.shields.io/badge/code-MIT-green">
   <img alt="Content: CC BY 4.0" src="https://img.shields.io/badge/content-CC--BY--4.0-blue">
   <img alt="Built in Cotonou" src="https://img.shields.io/badge/built%20in-Cotonou%20%F0%9F%87%A7%F0%9F%87%AF-black">
@@ -78,7 +78,7 @@ Everything is condensed in one file: **[`MASTER-DOC.md`](MASTER-DOC.md)** (~26k 
 # → click "Use this template" above
 
 # Option B: clone and copy the AI skills into your own project
-git clone https://github.com/OWNER/african-ai-founder-os
+git clone https://github.com/Souraka229/african-ai-founder-os
 cd african-ai-founder-os
 ./install.sh /path/to/your/project   # copies .claude/skills/* into your repo
 ```
@@ -101,14 +101,14 @@ The Africa layer only stays useful if founders keep it current.
 - **Translate a playbook** (FR ↔ EN, or PT/AR)
 - **Report something outdated** → open an issue with the `report-outdated` template
 
-See [`CONTRIBUTING.md`](CONTRIBUTING.md). We have [good first issues](https://github.com/OWNER/african-ai-founder-os/labels/good%20first%20issue) and first review lands in < 24h.
+See [`CONTRIBUTING.md`](CONTRIBUTING.md). We have [good first issues](https://github.com/Souraka229/african-ai-founder-os/labels/good%20first%20issue) and first review lands in < 24h.
 
 Contribute 3× on one country and you become its **maintainer** (badge + listed below).
 
 ## Star history
 
-<a href="https://star-history.com/#OWNER/african-ai-founder-os&Date">
-  <img src="https://api.star-history.com/svg?repos=OWNER/african-ai-founder-os&type=Date" alt="Star history" width="600">
+<a href="https://star-history.com/#Souraka229/african-ai-founder-os&Date">
+  <img src="https://api.star-history.com/svg?repos=Souraka229/african-ai-founder-os&type=Date" alt="Star history" width="600">
 </a>
 
 ## Contributors
@@ -125,4 +125,5 @@ _Add yourself with a PR — the bot lists everyone here._
 
 ---
 
-<p align="center"><sub>Built in the open from Cotonou 🇧🇯 · Started by <a href="https://github.com/OWNER">Souraka HAMIDA</a> · Join the <a href="#">community</a></sub></p>
+<p align="center"><sub>Built in the open from Cotonou 🇧🇯 · Started by <a href="https://github.com/Souraka229">Souraka HAMIDA</a> · Join the <a href="#">community</a></sub></p>
+

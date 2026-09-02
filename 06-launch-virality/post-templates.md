@@ -1,6 +1,6 @@
 # Post templates
 
-Replace `OWNER`, `[link]`, numbers. Adapt each per platform — never paste the same text everywhere.
+Replace `Souraka229`, `[link]`, numbers. Adapt each per platform — never paste the same text everywhere.
 
 ## Show HN
 
@@ -81,3 +81,4 @@ Subject: An open-source "operating system" for African AI founders (built from B
 place: grants + payment providers + regulations by country). Then: "I can give you exclusive
 access to the case study + the underlying data." Link.
 ```
+
